@@ -9,7 +9,7 @@ export default function Button({onPress, title, type, ...rest}:ButtonProps){
         <TouchableOpacity 
         style={
             type == "black"
-              ? styles.buttonWhite
+              ? styles.buttonCiano
               : type == "white"
               ? styles.buttonBlack
               : styles.buttonCiano
