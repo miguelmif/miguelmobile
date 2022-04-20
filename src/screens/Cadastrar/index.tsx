@@ -13,7 +13,7 @@ export default function Cadastrar({}:LoginTypes) {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require("../../assets/fundo.png")}
+        source={require("../../../assets/logo2.png")}
         style={styles.container}
       >
         <KeyboardAvoidingView>
@@ -40,7 +40,7 @@ export default function Cadastrar({}:LoginTypes) {
               autoCapitalize="none"
             />
           </View>
-          <Button title="Login" type="ciano" onPress={handleSignIn} />
+          <Button title="Voltar para o login" type="black" onPress={handleSignIn} />
           <Button title="Cadastre-se" type="black" onPress={handleSignIn} />
         </KeyboardAvoidingView>
       </ImageBackground>
