@@ -45,8 +45,8 @@ export default function Login({ navigation }: LoginTypes) {
               autoCapitalize="none"
             />
           </View>
-          <Button title="Entrar" type="black" onPress={handleSignIn} />
-          <Button title="Cadastre-se" type="black" onPress={handleCadastrar} />
+          <Button title="Entrar" type="marrom" onPress={handleSignIn} />
+          <Button title="Cadastre-se" type="dourado" onPress={handleCadastrar} />
         </KeyboardAvoidingView>
       </ImageBackground>
     </View>

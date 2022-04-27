@@ -40,7 +40,7 @@ export default function Cadastrar({}:LoginTypes) {
               autoCapitalize="none"
             />
           </View>
-          <Button title="Voltar para o login" type="black" onPress={handleSignIn} />
+          <Button title="Salvar" type="bege" onPress={handleSignIn} />
           <Button title="Cadastre-se" type="black" onPress={handleSignIn} />
         </KeyboardAvoidingView>
       </ImageBackground>

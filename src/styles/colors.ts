@@ -5,6 +5,8 @@ export default {
     marrom: '#675F41',
     dourado: '#D8DB34',
     cinza: '#4D4540',
-    bege: '#FFE9CA'
+    bege: '#FFE9CA',
+    begef: '#FFE9CA',   
+    azulest: '#455A64'
 
 }
