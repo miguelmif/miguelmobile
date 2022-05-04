@@ -8,12 +8,8 @@ import Button from "../../components/Button";
 export default function Perfil() {
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require("../../assets/fundo.png")}
-        style={styles.container}
-      >
-        <Image source={require("../../assets/lazaro.png")} />
-        <Text>Lázaro Eduardo da Silva</Text>
+        <Text>Miguel Miranda Fracassi</Text>
+        <Text> Dragon Ball Z</Text>
         <CardSocial>
           <>
             <FontAwesome5 name="facebook" />
@@ -42,8 +38,12 @@ export default function Perfil() {
           type="dourado"
           onPress={() => console.log("Alterar Senha")}
         />
-        <Button title="Sair" type="black" onPress={() => console.log("Sair")} />
-      </ImageBackground>
+        <Button 
+        title="Sair" 
+        type="marrom" 
+        onPress={() => console.log("Sair")} 
+        />
+
     </View>
   );
 }

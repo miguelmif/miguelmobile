@@ -35,15 +35,6 @@ export default function TabNavigation() {
           ),
         }}
       />
-      <Tab.Screen
-        name="Mensagem"
-        component={ChatScreen}
-        options={{
-          tabBarIcon: () => (
-            <Ionicons name="chatbubbles" size={24} color={colors.white} />
-          ),
-        }}
-      />
     </Tab.Navigator>
   );
 }

@@ -1,21 +1,20 @@
 import React from "react";
-import { View, Text, TextInput, KeyboardAvoidingView, ImageBackground } from "react-native";
+import { View, Text, TextInput, KeyboardAvoidingView, Image} from "react-native";
 import { MaterialIcons, Entypo, Ionicons } from "@expo/vector-icons";
 import Button from "../../components/Button";
 import styles from "./styles";
 import {LoginTypes} from "../../types/Screen.types"
 
-export default function Cadastrar({}:LoginTypes) {
+export default function Cadastrar({navigation}:LoginTypes) {
   async function handleSignIn() {
-    console.log("Login");
+    console.log("Cadastrar");
+  }
+  function handleLogin() {
+    navigation.navigate("Login");
   }
 
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require("../../../assets/logo2.png")}
-        style={styles.container}
-      >
         <KeyboardAvoidingView>
           <Text style={styles.title}>Cadastre-se</Text>
           <View style={styles.formRow}>
@@ -40,10 +39,13 @@ export default function Cadastrar({}:LoginTypes) {
               autoCapitalize="none"
             />
           </View>
-          <Button title="Salvar" type="bege" onPress={handleSignIn} />
-          <Button title="Cadastre-se" type="black" onPress={handleSignIn} />
+          <Button title="Salvar" type="marrom" onPress={handleSignIn} />
+          <Button title="Voltar pra o login" type="dourado" onPress={handleLogin} />
         </KeyboardAvoidingView>
-      </ImageBackground>
+        <Image 
+          source={require("../../../assets/logo2.png")}
+          style={styles.image}
+         />
     </View>
   );
 }

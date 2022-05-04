@@ -12,8 +12,13 @@ const styles = StyleSheet.create({
       borderRadius: 5,
       margin: 10
     },
-    buttonCiano: {
-      backgroundColor: colors.ciano,
+    buttonMarrom: {
+      backgroundColor: colors.marrom,
+      borderRadius: 5,
+      margin: 10
+    },
+    buttonDourado: {
+      backgroundColor: colors.dourado,
       borderRadius: 5,
       margin: 10
     },

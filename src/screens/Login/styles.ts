@@ -31,6 +31,9 @@ const styles = StyleSheet.create({
         fontSize: 18,
         padding: 5,
         width: "80%"
+    },
+    image:{
+        width: "100%"
     }
 })
 
