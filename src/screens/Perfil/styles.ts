@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: {
-    fontSize: 70,
-    fontWeight: "bold",
-    textAlign: "center",
-    color: colors.marrom,
-    marginBottom: 0,
+    fontSize: 30,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: colors.azulest,
+    marginBottom: 20,
   },
   formRow: {
     margin: 10,

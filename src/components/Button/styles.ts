@@ -20,12 +20,14 @@ const styles = StyleSheet.create({
     buttonDourado: {
       backgroundColor: colors.dourado,
       borderRadius: 5,
-      margin: 10
+      margin: 10,
+      width: "90%"
     },
     text: {
       color: colors.white,
       fontWeight: 'bold',
       textAlign: 'center',
+
       padding: 10,
       fontSize: 18
     }

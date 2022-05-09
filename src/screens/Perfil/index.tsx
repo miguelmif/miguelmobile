@@ -8,8 +8,8 @@ import Button from "../../components/Button";
 export default function Perfil() {
   return (
     <View style={styles.container}>
-        <Text>Miguel Miranda Fracassi</Text>
-        <Text> Dragon Ball Z</Text>
+        <Text style={styles.title}>Miguel Miranda Fracassi</Text>
+        <Text style={styles.title}> Dragon Ball Z</Text>
         <CardSocial>
           <>
             <FontAwesome5 name="facebook" />
@@ -30,7 +30,7 @@ export default function Perfil() {
         </CardSocial>
         <Button
           title="Salvar"
-          type="marrom"
+          type="dourado"
           onPress={() => console.log("Salvar")}
         />
         <Button
@@ -40,7 +40,7 @@ export default function Perfil() {
         />
         <Button 
         title="Sair" 
-        type="marrom" 
+        type="dourado" 
         onPress={() => console.log("Sair")} 
         />
 

@@ -44,7 +44,7 @@ export default function Login({ navigation }: LoginTypes) {
             />
           </View>
           <Button title="Entrar" type="marrom" onPress={handleSignIn} />
-          <Button title="Cadastre-se" type="dourado" onPress={handleCadastrar} />
+          <Button title="Cadastre-se" type="marrom" onPress={handleCadastrar} />
         </KeyboardAvoidingView>
         <Image 
           source={require("../../../assets/logo2.png")}

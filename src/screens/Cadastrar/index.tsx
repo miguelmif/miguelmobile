@@ -40,7 +40,7 @@ export default function Cadastrar({navigation}:LoginTypes) {
             />
           </View>
           <Button title="Salvar" type="marrom" onPress={handleSignIn} />
-          <Button title="Voltar pra o login" type="dourado" onPress={handleLogin} />
+          <Button title="Voltar pra o login" type="marrom" onPress={handleLogin} />
         </KeyboardAvoidingView>
         <Image 
           source={require("../../../assets/logo2.png")}
