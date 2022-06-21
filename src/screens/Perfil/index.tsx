@@ -1,44 +1,41 @@
 import React from "react";
-import { View, Text, ImageBackground, Image, TextInput } from "react-native";
-import CardSocial from "../../components/CardSocial";
+import { Text, View, TextInput } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { ButtonComp, CardSocialComp } from "../../components";
 import styles from "./styles";
-import Button from "../../components/Button";
+import { useAuth } from "../../hook/auth";
 
 export default function Perfil() {
+  const { user } = useAuth();
+
   return (
     <View style={styles.container}>
         <Text style={styles.title}>Miguel Miranda Fracassi</Text>
         <Text style={styles.title}> Dragon Ball Z</Text>
-        <CardSocial>
+        <CardSocialComp>
           <>
             <FontAwesome5 name="facebook" />
             <TextInput placeholder="https://facebook.com" />
           </>
-        </CardSocial>
-        <CardSocial>
+        </CardSocialComp>
+        <CardSocialComp>
           <>
             <FontAwesome5 name="instagram" />
             <TextInput placeholder="https://instagram.com" />
           </>
-        </CardSocial>
-        <CardSocial>
+        </CardSocialComp>
+        <CardSocialComp>
           <>
             <FontAwesome5 name="twitter" />
             <TextInput placeholder="https://twitter.com" />
           </>
-        </CardSocial>
-        <Button
+        </CardSocialComp>
+        <ButtonComp
           title="Salvar"
-          type="dourado"
-          onPress={() => console.log("Salvar")}
-        />
-        <Button
-          title="Alterar Senha"
           type="dourado"
           onPress={() => console.log("Alterar Senha")}
         />
-        <Button 
+        <ButtonComp 
         title="Sair" 
         type="dourado" 
         onPress={() => console.log("Sair")} 
