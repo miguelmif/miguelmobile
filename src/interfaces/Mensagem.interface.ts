@@ -25,14 +25,14 @@ export interface IMensagemResponse {
         user: {
             id: number
             name: string 
-        }[]
-    }
+        }
+    }[]
 }
 
 export interface IMensagemState {
     id: number
     titulo: string
-    image: string
+    imagem: string
     created_at: Date
     topicos: {
         id: number
