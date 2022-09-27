@@ -28,7 +28,25 @@ export default function DrawerNavigation() {
                         <MaterialCommunityIcons name="video" size={24} color={colors.white} />
                     ),
                 }}
-            />   
+            /> 
+            <Drawer.Screen
+                name="Perfil"
+                component={PerfilScreen}
+                options={{
+                drawerIcon: () => (
+                    <Ionicons name="person" size={24} color={colors.white} />
+                ),
+                }}
+            />
+            <Drawer.Screen
+                name="Sair"
+                component={SairScreen}
+                options={{
+                drawerIcon: () => (
+                    <Ionicons name="exit" size={24} color={colors.white} />
+                ),
+                }}
+            />
         </Drawer.Navigator>
     )
 }

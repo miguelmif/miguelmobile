@@ -1,12 +1,32 @@
-import React from "react";
+import React,  {useEffect, useRef, useState}  from "react";
 import { Text, View, TextInput } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { ButtonComp, CardSocialComp } from "../../components";
 import styles from "./styles";
 import { useAuth } from "../../hook/auth";
+import * as Notifications from 'expo-notifications';
+import { registerForPushNotificationsAsync } from "../../services/data/Push"
+
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
 
 export default function Perfil() {
   const { user } = useAuth();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchToken() {
+      const token = await registerForPushNotificationsAsync()
+      console.log(token)
+    }
+    fetchToken()
+  }, []);
 
   return (
     <View style={styles.container}>
